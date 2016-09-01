@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>Obat ABC</title>
+	<script src="libs/jquery-1.9.1.min.js"></script>
+	<script src="libs/bignumber.min.js"></script>
+	<script src="libs/script.js"></script>
+	<script>
+	window.onbeforeunload = function (e) {
+	    e = e || window.event;
+
+	    // For IE and Firefox prior to version 4
+	    if (e) {
+	        e.returnValue = 'Sure?';
+	    }
+
+	    // For Safari
+	    return 'Sure?';
+	};
+	</script>
+	<link rel="stylesheet" type="text/css" href="libs/style.css">
+</head>
+<h1>DATA PERSEDIAAN OBAT UNIT FARMASI KLINIK SPESIALIS MATA SMEC JAKARTA</h1>
+
+<body>
+	<div id="intro">
+		<table id="introInput">
+		<tr>
+			<td class="introInputTD">
+				Bulan
+			</td>
+			<td>
+				<input type="text" name="month" id="month" required=""><br>
+			</td>
+		</tr>
+		<tr>
+			<td class="introInputTD">
+				Tahun
+			</td>
+			<td>
+				<input type="text" name="year" id="year" required=""><br>
+			</td>
+		</tr>
+		<tr align="center">
+			<td colspan="2">
+				<button id="next">Next</button>
+			</td>
+		</tr>
+	</table>
+	</div>
+	<div id="main">
+		<h1 id="yearMonth">TAHUN 2016 (JANUARI-MARET)</h1>
+		<table id="input">
+			<tr>
+				<td>
+					Nama Obat
+				</td>
+				<td>
+					<input type="text" name="medName" id="medName" required=""><br>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Harga Obat (Rupiah)
+				</td>
+				<td>
+					<input type="text" name="medPrice" id="medPrice" onkeypress='return isDecimal(event)' required><br>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Jumlah Pemakaian (Satuan)
+				</td>
+				<td>
+					<input type="text" name="medNums" id="medNums" onkeypress='return isDecimal(event)' required=""><br>
+				</td>
+			</tr>
+			<tr align="center">
+				<td colspan="2">
+					<button id="add">Tambahkan</button>
+				</td>
+			</tr>
+		</table>
+	<div id="divButton">
+		<button id="editMonth">Ganti bulan/tahun</button>
+		<button id="reset">Reset All</button>
+	</div>
+	<div id="data"></div>
+	</div>
+</body>
+</html>

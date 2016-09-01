@@ -1,0 +1,29 @@
+Prasyarat:
+1. Browser apapun (Chrome, firefox, safari, IE/Edge, Opera)
+2. Cek browsermu udah enable javascript belum, caranya liat di: http://enable-javascript.com atau buka file 'How to enable JavaScript blablaba...'
+
+Cara menggunakan:
+1. Buka file ObatABC.html menggunakan browser. Bisa double-click, bisa right-click --> open with, bisa juga drag-n-drop ke browsernya langsung
+2. Input sesuai data yang kamu mau di page tsb
+3. Kalo ada record yang mau dihapus, hapus aja, tabelnya bakal ke update lagi
+4. Kalo mau save tablenya, bisa dgn beberapa cara:
+	3.1. Print page lalu save to pdf, atau
+	3.2. Save page as, atau
+	3.3. Screenshot/capture, atau
+	3.4. Copas manual :')
+
+Mau request fitur lain? Nanti diusahain ya :)
+
+## Changelog v0 to v1 ##
+- Field Kelompok ABC dihapus dari user-input field
+- Auto generate kelompok ABC based on persen kumulatif dgn range:
+	- 0-70% -> A
+	- 70-90% -> B
+	- 90-100 -> C
+	- satu barang yg persen kumulatifnya mendekati (selisih 1% dari) threshold kelompoknya bakal naik satu tingkat. 
+	Contoh 70.78 -> A (harusnya B); 90.38 -> B (harusnya C)
+- Nambahin validasi input
+
+## Changelog v1 to v1.1 ##
+- Fitur baru: input field buat bulan tahun rekapan
+- Bulan dah tahun bisa di ganti juga saat sambil ngerekap

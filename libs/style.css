@@ -1,0 +1,116 @@
+body {
+	background-color: #DDDDDD;
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+h1 {
+	font-size: 25px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+h1#yearMonth {
+	margin-top: -10px;
+}
+
+div#main {
+	display: none;
+}
+
+table#input {
+	width: 400px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+table#introInput {
+	width: 300px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+table td.introInputTD {
+	width: 100px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div#dataWrap {
+	width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+table#dataTable {
+	margin-top: 20px;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table#dataTable th, table#dataTable td {
+    padding: 8px;
+}
+
+table#dataTable tr:nth-child(even){
+	background-color: #dcefdc;
+}
+
+table#dataTable tr:nth-child(odd){
+	background-color: #a6d8a8;
+}
+
+table#dataTable th {
+    background-color: #3e8e41;
+    color: white;
+    text-align: center;
+}
+
+table#dataTable th#total {
+    text-align: left;
+}
+
+table#dataTable th#totalVal {
+    text-align: right;
+}
+
+button#add {
+	width: 100px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 10px;
+}
+
+button#next {
+	width: 100px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 10px;
+}
+
+button#reset {
+	width: 100px;
+}
+
+button#save {
+	width: 150px;
+	margin-right: 20px;
+}
+
+div#divButton {
+	text-align: right;
+}
+
+table#dataTable td {
+	border-left: 1px solid #4eb153;
+	border-right: 1px solid #4eb153;
+}
+
+table#dataTable td:first-child {
+	border-left: none;
+}
+
+table#dataTable td:last-child {
+	border-right: none;
+}
